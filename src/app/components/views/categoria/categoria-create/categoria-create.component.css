@@ -20,6 +20,7 @@ form {
     width: 100%;
 }
 
+
 .buttons {
     width: 100%;
     text-align: start;
@@ -34,3 +35,4 @@ button {
 button.mat-accent.criar {
     color: #0f8a4e;
 }
+
