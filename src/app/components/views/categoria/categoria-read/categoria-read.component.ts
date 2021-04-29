@@ -12,7 +12,7 @@ export class CategoriaReadComponent implements OnInit {
 
   categorias: Categoria[] = []
 
-  displayedColumns : String[] = [ 'id' , 'nome' , 'descricao' , 'acoes' ];
+  displayedColumns : String[] = [ 'id' , 'nome' , 'descricao', 'livros' , 'acoes' ];
 
   constructor(private service: CategoriaService) { }
 
