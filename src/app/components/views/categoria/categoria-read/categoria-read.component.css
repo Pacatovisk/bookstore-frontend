@@ -4,7 +4,7 @@
 }
 
 .title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 3rem
 }
 
@@ -17,12 +17,16 @@ button {
     margin-bottom: .8rem;
 }
 
+button.mat-accent {
+    color: #0f8a4e;
+}
+
 .table {
     width: 100%;
 }
 
 .livros {
-    color: rgb(21, 99, 187);
+    color: rgb(13, 121, 58);
     margin-left: .5rem;
 }
 
