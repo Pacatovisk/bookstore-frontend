@@ -1,0 +1,29 @@
+.title {
+    text-align: left;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem
+}
+
+.title h1 {
+    font-size: 2rem;
+    color: rgba(207, 186, 186, 0.979);
+}
+
+form {
+    width: 90%;
+    margin: auto;
+}
+
+.home {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.subtitleautor {
+    text-align: left;
+}
+
+button {
+    width: 100%;
+}
