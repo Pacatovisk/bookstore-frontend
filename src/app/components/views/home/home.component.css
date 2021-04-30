@@ -7,10 +7,6 @@ mat-grid-list {
     background-color: rgba(41, 139, 24, 0.945);
 }
 
-mat-grid-tile {
-    background: lightblue;
-  }
-
 @media(max-width:450px){
     .home {
         width: 70%;
