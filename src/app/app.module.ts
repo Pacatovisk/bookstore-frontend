@@ -33,6 +33,8 @@ import { LivroUpdateComponent } from './components/views/livro/livro-update/livr
 import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 import { LivroReadComponent } from './components/views/livro/livro-read/livro-read.component';
 
+import { NgxSummernoteModule } from 'ngx-summernote';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,10 +70,12 @@ import { LivroReadComponent } from './components/views/livro/livro-read/livro-re
     MatSnackBarModule,
     ReactiveFormsModule,
     MatGridListModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    NgxSummernoteModule
     
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
