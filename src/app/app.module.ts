@@ -30,6 +30,7 @@ import { LivroCreateComponent } from './components/views/livro/livro-create/livr
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { LivroUpdateComponent } from './components/views/livro/livro-update/livro-update.component';
+import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { LivroUpdateComponent } from './components/views/livro/livro-update/livr
     CategoriaUpdateComponent,
     LivroReadAllComponent,
     LivroCreateComponent,
-    LivroUpdateComponent
+    LivroUpdateComponent,
+    LivroDeleteComponent
   ],
   imports: [
     BrowserModule,
