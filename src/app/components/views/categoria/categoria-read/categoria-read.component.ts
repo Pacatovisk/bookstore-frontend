@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Categoria } from '../categoria.model';
 import { CategoriaService } from '../categoria.service';
 
+
 @Component({
   selector: 'app-categoria-read',
   templateUrl: './categoria-read.component.html',
