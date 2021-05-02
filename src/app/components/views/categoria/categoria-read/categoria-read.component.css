@@ -13,6 +13,15 @@
     color: rgba(207, 186, 186, 0.979);
 }
 
+.filter {
+   margin-left:69%;
+}
+
+.icone {
+    padding-bottom: 10px;
+    color: rgba(30, 210, 42, 0.507);
+}
+
 button {
     margin-bottom: .8rem;
 }

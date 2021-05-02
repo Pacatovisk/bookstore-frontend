@@ -22,8 +22,6 @@ export class LivroReadAllComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
- 
-
   constructor(
     private service: LivroService,
     private route: ActivatedRoute,
@@ -42,6 +40,11 @@ export class LivroReadAllComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
     })
   }
+
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+ 
 
   navegarParaCriarLivro(): void {
     this.router.navigate([`categorias/${this.id_cat}/livros/create`])

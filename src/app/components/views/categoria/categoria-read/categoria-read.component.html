@@ -2,8 +2,13 @@
    <div class="title">
         <h1>CATEGORIAS</h1>
     </div>
-    
+
     <button class="mat-elevation-z8" (click)="navegarParaCategoriaCreate()"  mat-stroked-button color="accent">NOVA CATEGORIA</button>
+
+    <mat-form-field class="filter">
+      <mat-label><i class="material-icons icone">search</i></mat-label>
+      <input (keyup)="applyFilter($event.target.value)" matInput placeholder="Buscar Categoria">
+    </mat-form-field>
 
     <div class="mat-elevation-z8 content-table">
         <table class="table" mat-table [dataSource]="dataSource" >
