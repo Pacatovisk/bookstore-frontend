@@ -6,7 +6,7 @@
     <button class="mat-elevation-z8" (click)="navegarParaCategoriaCreate()"  mat-stroked-button color="accent">NOVA CATEGORIA</button>
 
     <div class="mat-elevation-z8 content-table">
-        <table class="table" mat-table [dataSource]="categorias" >
+        <table class="table" mat-table [dataSource]="dataSource" >
       
             <!-- Id  -->
             <ng-container matColumnDef="id">
@@ -54,10 +54,7 @@
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
           </table>
-          <mat-paginator [length]="100"
-            [pageSize]="10"
-            [pageSizeOptions]="[5, 10, 25, 100]">
-          </mat-paginator>
+          <mat-paginator [pageSizeOptions]="[5, 2, 10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
     </div>
 
 </div>

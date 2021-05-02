@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { Categoria } from '../categoria.model';
 import { CategoriaService } from '../categoria.service';
@@ -15,6 +17,9 @@ export class CategoriaReadComponent implements OnInit {
   categorias: Categoria[] = []
 
   displayedColumns : String[] = [ 'id' , 'nome' , 'descricao', 'livros' , 'acoes' ];
+  dataSource = new MatTableDataSource<Categoria>(this.categorias);
+
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   constructor(private service: CategoriaService, private router: Router) { }
 
@@ -22,15 +27,17 @@ export class CategoriaReadComponent implements OnInit {
     this.findAll();
   }
 
-  findAll() {
+  findAll(): void {
     this.service.findAll().subscribe(resposta => {
       console.log(resposta)
       this.categorias = resposta;
+      this.dataSource = new MatTableDataSource<Categoria>(this.categorias);
+      this.dataSource.paginator = this.paginator;
     })
   }
  
 
-  navegarParaCategoriaCreate() {
+  navegarParaCategoriaCreate(): void {
     this.router.navigate(["categorias/create"])
   }
 }
